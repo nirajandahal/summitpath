@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Everest Base Camp Trek | SummitPath</title>
+  <meta name="description" content="Trek to Everest Base Camp at 5,364m with expert guides. 14 days, full permits included, small groups. From $1,480 per person." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+ 
+<!--
+  _header.html
+  Copy this block into the <body> of every page, right at the top.
+  Adjust data-page on each .nav-link to match the current page filename
+  so the active link gets highlighted automatically.
+-->
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="SummitPath home">
+        <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="2,22 10,8 16,16 20,10 26,22"/>
+        </svg>
+        Summit<span>Path</span>
+      </a>
+
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" data-page="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-page="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-haspopup="true">
+            Trek Destinations
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li><a href="trek-everest.html" role="menuitem">Everest Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Annapurna Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Langtang Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Manaslu Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Short Treks</a></li>
+            <hr class="dropdown-divider" />
+            <li><a href="destinations.html" class="view-all" role="menuitem">View All Treks →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="tours.html">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" data-page="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-cta">
+          <a class="btn btn-primary" href="contact.html">Book Now</a>
+        </li>
+      </ul>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a class="mobile-nav-link" href="index.html">Home</a>
+  <a class="mobile-nav-link" href="about.html">About Us</a>
+  <div>
+    <a class="mobile-nav-link" id="mobileDestToggle" href="#">
+      Trek Destinations
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+    <div class="mobile-accordion" id="mobileDestMenu">
+      <a href="trek-everest.html">Everest Region</a>
+      <a href="trek-everest.html">Annapurna Region</a>
+      <a href="trek-everest.html">Langtang Region</a>
+      <a href="trek-everest.html">Manaslu Region</a>
+      <a href="trek-everest.html">Short Treks</a>
+      <a href="trek-everest.html" style="font-weight:700;color:var(--red)">View All Treks →</a>
+    </div>
+  </div>
+  <a class="mobile-nav-link" href="#">Tours</a>
+  <a class="mobile-nav-link" href="#">Blog</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+  <a class="btn btn-primary mobile-cta" href="contact.html">Book Now</a>
+</div>
+
+  <!-- HERO BANNER -->
+  <div class="dest-hero">
+    <div class="dest-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=1600&q=80')"></div>
+    <div class="container">
+      <div class="dest-hero-content">
+        <nav class="page-breadcrumb" style="margin-bottom:14px">
+          <a href="index.html" style="color:rgba(255,255,255,.7)">Home</a>
+          <span style="color:rgba(255,255,255,.4)"> / </span>
+          <a href="destinations.html" style="color:rgba(255,255,255,.7)">Destinations</a>
+          <span style="color:rgba(255,255,255,.4)"> / </span>
+          <span style="color:var(--white)">Everest Base Camp</span>
+        </nav>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px">
+          <span class="tag tag-hard">Challenging</span>
+          <span style="font-size:.8rem;color:rgba(255,255,255,.7);font-weight:600">Everest Region</span>
+        </div>
+        <h1>Everest Base Camp Trek</h1>
+        <p>Stand at the foot of the world's highest mountain. 14 days through Sherpa villages, ancient monasteries, and the breathtaking Khumbu Glacier.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK FACTS BAR -->
+  <div class="container">
+    <div class="quick-facts">
+      <div class="quick-fact">
+        <div class="quick-fact-label">Duration</div>
+        <div class="quick-fact-value">14 Days<span>13 Nights</span></div>
+      </div>
+      <div class="quick-fact">
+        <div class="quick-fact-label">Max Altitude</div>
+        <div class="quick-fact-value">5,364m<span>Everest Base Camp</span></div>
+      </div>
+      <div class="quick-fact">
+        <div class="quick-fact-label">Difficulty</div>
+        <div class="quick-fact-value">Challenging<span>Prior hiking needed</span></div>
+      </div>
+      <div class="quick-fact">
+        <div class="quick-fact-label">Group Size</div>
+        <div class="quick-fact-value">Max 12<span>Private also available</span></div>
+      </div>
+      <div class="quick-fact">
+        <div class="quick-fact-label">Best Season</div>
+        <div class="quick-fact-value">Mar–May<span>Also Sep–Nov</span></div>
+      </div>
+      <div class="quick-fact">
+        <div class="quick-fact-label">Price</div>
+        <div class="quick-fact-value">$1,480<span>Per person</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="detail-layout">
+
+        <!-- LEFT: Content -->
+        <div>
+
+          <!-- Overview -->
+          <div class="prose" style="max-width:100%">
+            <h2>Overview</h2>
+            <p>The Everest Base Camp trek is one of the world's great adventures — a 130km journey through the heart of the Khumbu, Nepal's most celebrated trekking region. You'll walk in the footsteps of legendary mountaineers like Edmund Hillary and Tenzing Norgay, passing through the bustling market town of Namche Bazaar, the sacred monastery of Tengboche, and the high-altitude settlement of Gorak Shep before reaching Base Camp at 5,364m.</p>
+            <p>The trail rewards trekkers not just with altitude but with depth — rich Sherpa culture, yak caravans on ancient trade routes, prayer flags snapping in the wind, and panoramic views of Lhotse, Nuptse, Ama Dablam, and of course, Everest herself. This is not simply a walk to a destination. It is a complete immersion in one of the most awe-inspiring landscapes on Earth.</p>
+          </div>
+
+          <!-- Photo Gallery -->
+          <div style="margin-top:40px">
+            <p class="section-label">Gallery</p>
+            <div class="gallery-strip">
+              <img class="gallery-main" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800&q=80" alt="Everest Base Camp panorama" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1469521669194-babb45599def?w=500&q=80" alt="Himalayan trail" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=500&q=80" alt="Mountain valley" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=500&q=80" alt="Sunrise over peaks" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80" alt="High altitude camp" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- Highlights -->
+          <div class="prose" style="max-width:100%;margin-top:40px">
+            <h2>Trek Highlights</h2>
+            <ul>
+              <li>Stand at Everest Base Camp (5,364m) and look up at the Khumbu Icefall</li>
+              <li>Sunrise from Kala Patthar (5,545m) — the best viewpoint for Everest's summit</li>
+              <li>Visit Tengboche Monastery, the spiritual heart of the Khumbu</li>
+              <li>Explore Namche Bazaar, the lively Sherpa capital of the Himalayas</li>
+              <li>Cross iconic suspension bridges strung with prayer flags over deep gorges</li>
+              <li>Experience genuine Sherpa hospitality in family-run teahouses</li>
+            </ul>
+          </div>
+
+          <!-- Itinerary -->
+          <div style="margin-top:40px">
+            <p class="section-label">Day by Day</p>
+            <h2 class="section-title">Itinerary</h2>
+            <div class="itinerary">
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D1</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Kathmandu — Arrival & Briefing</div>
+                  <div class="itinerary-day-desc">Arrive in Kathmandu. Transfer to hotel, trek briefing with your lead guide, gear check, and welcome dinner. Overnight at 1,400m.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D2</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Fly Kathmandu → Lukla, Trek to Phakding</div>
+                  <div class="itinerary-day-desc">35-minute mountain flight to Lukla (2,840m), then a 3–4 hour walk down through rhododendron forest to Phakding (2,610m).</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D3</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Phakding → Namche Bazaar</div>
+                  <div class="itinerary-day-desc">Follow the Dudh Koshi river valley, cross iconic suspension bridges, and climb steeply to the bustling Sherpa capital of Namche Bazaar (3,440m). First glimpse of Everest en route.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D4</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Acclimatisation Day — Namche Bazaar</div>
+                  <div class="itinerary-day-desc">Rest and acclimatise. Optional hike to Everest View Hotel (3,880m) for panoramic views of Everest, Lhotse and Ama Dablam. Explore Namche market.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D5</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Namche → Tengboche</div>
+                  <div class="itinerary-day-desc">Trail through pine and juniper forest with constant Himalayan views. Arrive at Tengboche (3,860m) — home to the valley's most famous monastery. Attend evening prayers if timing allows.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D6</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Tengboche → Dingboche</div>
+                  <div class="itinerary-day-desc">Descend to the Imja Khola valley, then climb through increasingly sparse vegetation to Dingboche (4,410m). Dramatic views of Lhotse's south face.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D7</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Acclimatisation Day — Dingboche</div>
+                  <div class="itinerary-day-desc">Hike to Nagarjun Hill (5,100m) for views of Makalu, Baruntse, and the Island Peak. Afternoon rest and hydration.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D8</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Dingboche → Lobuche</div>
+                  <div class="itinerary-day-desc">Trek along the lateral moraine of the Khumbu Glacier. Pass the Thukla memorial chortens — tributes to climbers lost on Everest. Arrive Lobuche (4,940m).</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D9</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Lobuche → Gorak Shep → Everest Base Camp</div>
+                  <div class="itinerary-day-desc">The big day. Trek across the glacial moraine to Gorak Shep (5,164m), drop your bags, and continue to Everest Base Camp (5,364m). Soak in the moment. Return to Gorak Shep for the night.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D10</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Kala Patthar Sunrise → Pheriche</div>
+                  <div class="itinerary-day-desc">Pre-dawn climb to Kala Patthar (5,545m) for the finest view of Everest anywhere. Watch the summit turn gold at sunrise. Descend all the way to Pheriche (4,371m).</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D11</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Pheriche → Namche Bazaar</div>
+                  <div class="itinerary-day-desc">A long but rewarding descent through increasingly green terrain. Legs are tired but spirits are high. Celebrate in Namche with a hot shower and good food.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D12</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Namche → Lukla</div>
+                  <div class="itinerary-day-desc">Final day on trail. Descend the Dudh Koshi valley one last time, back to Lukla (2,840m). Farewell dinner with your guide and porter team.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D13</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Fly Lukla → Kathmandu</div>
+                  <div class="itinerary-day-desc">Morning flight back to Kathmandu (weather permitting). Free afternoon to rest or explore Thamel. Celebration dinner in the evening.</div>
+                </div>
+              </div>
+
+              <div class="itinerary-day">
+                <div class="itinerary-day-num">
+                  <div class="day-circle">D14</div>
+                  <div class="day-line"></div>
+                </div>
+                <div class="itinerary-day-content">
+                  <div class="itinerary-day-title">Kathmandu — Departure</div>
+                  <div class="itinerary-day-desc">Transfer to Tribhuvan International Airport for your onward flight. Trek complete.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- What's Included -->
+          <div class="prose" style="max-width:100%;margin-top:40px">
+            <h2>What's Included</h2>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:16px">
+            <div>
+              <p style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray-500);margin-bottom:12px">Included</p>
+              <ul class="incl-list">
+                <li>All Sagarmatha National Park permits &amp; TIMS card</li>
+                <li>Domestic flights: Kathmandu–Lukla–Kathmandu</li>
+                <li>Experienced licensed English-speaking guide</li>
+                <li>Porter (1 per 2 trekkers, max 10kg per porter)</li>
+                <li>Teahouse accommodation throughout</li>
+                <li>All meals on trail (breakfast, lunch, dinner)</li>
+                <li>Welcome &amp; farewell dinners in Kathmandu</li>
+                <li>First aid kit &amp; pulse oximeter</li>
+                <li>SummitPath duffel bag &amp; t-shirt</li>
+              </ul>
+            </div>
+            <div>
+              <p style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--gray-500);margin-bottom:12px">Not Included</p>
+              <ul class="incl-list excl-list">
+                <li>International flights to/from Kathmandu</li>
+                <li>Nepal visa fees (~$50 on arrival)</li>
+                <li>Travel insurance (mandatory — must cover heli evacuation)</li>
+                <li>Personal trekking gear &amp; clothing</li>
+                <li>Hot showers, battery charging, wifi on trail</li>
+                <li>Alcoholic beverages &amp; extra snacks</li>
+                <li>Tips for guides and porters (customary)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Sidebar -->
+        <aside class="detail-sidebar">
+
+          <!-- Booking card -->
+          <div class="sidebar-card" style="margin-bottom:24px">
+            <div class="sidebar-price">$1,480
+              <small>per person · all inclusive</small>
+            </div>
+            <a class="btn btn-primary" href="contact.html" style="width:100%;justify-content:center">Book This Trek</a>
+            <p style="font-size:.78rem;color:var(--gray-500);text-align:center;margin-top:10px">30% deposit to confirm · free changes up to 45 days</p>
+
+            <div class="sidebar-facts">
+              <div class="sidebar-fact">
+                <span class="sidebar-fact-label">Duration</span>
+                <span class="sidebar-fact-value">14 days</span>
+              </div>
+              <div class="sidebar-fact">
+                <span class="sidebar-fact-label">Max altitude</span>
+                <span class="sidebar-fact-value">5,364m</span>
+              </div>
+              <div class="sidebar-fact">
+                <span class="sidebar-fact-label">Difficulty</span>
+                <span class="sidebar-fact-value">Challenging</span>
+              </div>
+              <div class="sidebar-fact">
+                <span class="sidebar-fact-label">Group size</span>
+                <span class="sidebar-fact-value">Max 12</span>
+              </div>
+              <div class="sidebar-fact">
+                <span class="sidebar-fact-label">Start / End</span>
+                <span class="sidebar-fact-value">Kathmandu</span>
+              </div>
+              <div class="sidebar-fact">
+                <span class="sidebar-fact-label">Best seasons</span>
+                <span class="sidebar-fact-value">Mar–May, Sep–Nov</span>
+              </div>
+            </div>
+
+            <a class="btn btn-outline" href="contact.html" style="width:100%;justify-content:center;margin-top:8px">Ask a Question</a>
+          </div>
+
+          <!-- Need help card -->
+          <div class="sidebar-card" style="background:var(--red-light);border-color:transparent">
+            <h3 style="color:var(--red)">Need Help Choosing?</h3>
+            <p style="font-size:.875rem;color:var(--gray-700);line-height:1.7;margin-bottom:16px">Our team has walked every trail we offer. Call or WhatsApp us — we'll tell you honestly if this trek is right for you.</p>
+            <p style="font-size:.9rem;font-weight:700;color:var(--black)">📞 +977 9801 234 567</p>
+            <p style="font-size:.85rem;color:var(--gray-500);margin-top:4px">Mon–Sat · 9am–6pm NPT</p>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED TREKS -->
+  <section class="section treks-section">
+    <div class="container">
+      <p class="section-label">Also in the Everest Region</p>
+      <h2 class="section-title">Related Treks</h2>
+
+      <div class="grid-3" style="margin-top:40px">
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1445307806294-bff7f67ff225?w=600&q=80" alt="Gokyo Lakes" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-moderate">Moderate</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Gokyo Lakes Trek</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>12 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>5,357m</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,190</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1469521669194-babb45599def?w=600&q=80" alt="Three Passes Trek" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-hard">Challenging</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Three Passes Trek</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>18 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>5,550m</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,850</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Ama Dablam Base Camp" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-moderate">Moderate</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Ama Dablam Base Camp</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>10 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>4,600m</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,080</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="font-size:1.4rem;font-weight:800;color:var(--white);display:flex;align-items:center;gap:8px;text-decoration:none">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2,22 10,8 16,16 20,10 26,22"/></svg>
+            Summit<span style="color:var(--red)">Path</span>
+          </a>
+          <p>Expert-guided Himalayan treks since 2008. Licensed, insured, and passionately committed to your safety and wonder.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Trek Regions</h4>
+          <ul>
+            <li><a href="#">Everest Region</a></li>
+            <li><a href="#">Annapurna Region</a></li>
+            <li><a href="#">Langtang Region</a></li>
+            <li><a href="#">Manaslu Region</a></li>
+            <li><a href="#">Short Treks</a></li>
+            <li><a href="#">View All Treks</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <address>
+            Thamel, Kathmandu<br/>Nepal<br/><br/>
+            📞 +977 9801 234 567<br/>
+            ✉ info@summitpath.com<br/><br/>
+            Mon–Sat: 9am – 6pm NPT
+          </address>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2025 SummitPath Trekking Pvt. Ltd. All rights reserved.</p>
+        <div>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  
+  <!-- Shared scripts -->
+  <script src="nav.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trek Destinations | SummitPath</title>
+  <meta name="description" content="Explore all Himalayan trekking regions — Everest, Annapurna, Langtang, Manaslu and more. Find the perfect trek for your level and schedule." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  
+<!--
+  _header.html
+  Copy this block into the <body> of every page, right at the top.
+  Adjust data-page on each .nav-link to match the current page filename
+  so the active link gets highlighted automatically.
+-->
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+
+      <a href="index.html" class="nav-logo" aria-label="SummitPath home">
+        <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="2,22 10,8 16,16 20,10 26,22"/>
+        </svg>
+        Summit<span>Path</span>
+      </a>
+
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" data-page="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" data-page="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" aria-haspopup="true">
+            Trek Destinations
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <ul class="dropdown" role="menu">
+            <li><a href="trek-everest.html" role="menuitem">Everest Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Annapurna Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Langtang Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Manaslu Region</a></li>
+            <li><a href="destinations.html" role="menuitem">Short Treks</a></li>
+            <hr class="dropdown-divider" />
+            <li><a href="destinations.html" class="view-all" role="menuitem">View All Treks →</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="tours.html">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-page="blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" data-page="contact.html">Contact</a>
+        </li>
+        <li class="nav-item nav-cta">
+          <a class="btn btn-primary" href="contact.html">Book Now</a>
+        </li>
+      </ul>
+
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+  <a class="mobile-nav-link" href="index.html">Home</a>
+  <a class="mobile-nav-link" href="about.html">About Us</a>
+  <div>
+    <a class="mobile-nav-link" id="mobileDestToggle" href="#">
+      Trek Destinations
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+    <div class="mobile-accordion" id="mobileDestMenu">
+      <a href="trek-everest.html">Everest Region</a>
+      <a href="trek-everest.html">Annapurna Region</a>
+      <a href="trek-everest.html">Langtang Region</a>
+      <a href="trek-everest.html">Manaslu Region</a>
+      <a href="trek-everest.html">Short Treks</a>
+      <a href="trek-everest.html" style="font-weight:700;color:var(--red)">View All Treks →</a>
+    </div>
+  </div>
+  <a class="mobile-nav-link" href="#">Tours</a>
+  <a class="mobile-nav-link" href="#">Blog</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+  <a class="btn btn-primary mobile-cta" href="contact.html">Book Now</a>
+</div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / Trek Destinations
+      </nav>
+      <h1>Trek Destinations</h1>
+      <p>Five legendary regions. Forty-plus routes. One company you can trust.</p>
+    </div>
+  </div>
+
+  <!-- REGIONS GRID -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label">Explore by Region</p>
+      <h2 class="section-title">Choose Your Adventure</h2>
+      <p class="section-sub">Each region has its own character — from the world's highest peaks to hidden valleys and ancient monasteries. Pick the one that calls to you.</p>
+
+      <div class="grid-3" style="margin-top:48px">
+
+        <!-- Everest -->
+        <a class="region-card" href="trek-everest.html">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=700&q=80" alt="Everest Region" loading="lazy" />
+            <div class="region-card-overlay"></div>
+            <div class="region-card-label">Everest Region</div>
+          </div>
+          <div class="region-card-body">
+            <p class="region-card-desc">Home to the world's highest peak, the Khumbu region offers iconic trails through Sherpa villages, dramatic glaciers, and teahouses perched above the clouds.</p>
+            <div class="region-card-meta">
+              <span>6 treks</span>
+              <span>Up to 5,550m</span>
+              <span>From $980</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Annapurna -->
+        <a class="region-card" href="#">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=700&q=80" alt="Annapurna Region" loading="lazy" />
+            <div class="region-card-overlay"></div>
+            <div class="region-card-label">Annapurna Region</div>
+          </div>
+          <div class="region-card-body">
+            <p class="region-card-desc">The most diverse trekking region in Nepal — from subtropical forests to high alpine desert. The Annapurna Circuit is one of the great classic walks of the world.</p>
+            <div class="region-card-meta">
+              <span>8 treks</span>
+              <span>Up to 5,416m</span>
+              <span>From $490</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Langtang -->
+        <a class="region-card" href="#">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=700&q=80" alt="Langtang Region" loading="lazy" />
+            <div class="region-card-overlay"></div>
+            <div class="region-card-label">Langtang Region</div>
+          </div>
+          <div class="region-card-body">
+            <p class="region-card-desc">Nepal's closest major trekking region to Kathmandu. Green valleys, Tibetan-influenced culture, and stunning views of Langtang Lirung — with far fewer crowds.</p>
+            <div class="region-card-meta">
+              <span>4 treks</span>
+              <span>Up to 5,000m</span>
+              <span>From $650</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Manaslu -->
+        <a class="region-card" href="#">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700&q=80" alt="Manaslu Region" loading="lazy" />
+            <div class="region-card-overlay"></div>
+            <div class="region-card-label">Manaslu Region</div>
+          </div>
+          <div class="region-card-body">
+            <p class="region-card-desc">A restricted circuit around the world's eighth-highest mountain. Raw, remote, and deeply rewarding — for trekkers who want the real Himalayan wilderness.</p>
+            <div class="region-card-meta">
+              <span>3 treks</span>
+              <span>Up to 5,160m</span>
+              <span>From $1,450</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Short Treks -->
+        <a class="region-card" href="#">
+          <div class="region-card-img">
+            <img src="https://images.unsplash.com/photo-1571755177369-2b8f5e1e1e5d?w=700&q=80" alt="Short Treks" loading="lazy" />
+            <div class="region-card-overlay"></div>
+            <div class="region-card-label">Short Treks</div>
+          </div>
+          <div class="region-card-body">
+            <p class="region-card-desc">Perfect for first-timers or travellers short on time. 3–7 day treks with sunrise viewpoints, rhododendron forests, and genuine mountain magic.</p>
+            <div class="region-card-meta">
+              <span>10 treks</span>
+              <span>Up to 3,210m</span>
+              <span>From $280</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Custom -->
+        <a class="region-card" href="contact.html" style="background:var(--gray-100)">
+          <div class="region-card-img" style="background:var(--black);display:flex;align-items:center;justify-content:center;aspect-ratio:3/2">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <div class="region-card-body">
+            <p class="section-label" style="margin-bottom:8px">Custom</p>
+            <p class="region-card-desc">Have a specific peak, route, or duration in mind? We design fully bespoke itineraries — just tell us your dream and we'll make it happen.</p>
+            <div class="region-card-meta">
+              <span>Any duration</span>
+              <span>Any region</span>
+              <span>Custom price</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALL TREKS LISTING -->
+  <section class="section treks-section">
+    <div class="container">
+      <div class="treks-header">
+        <div>
+          <p class="section-label">All Routes</p>
+          <h2 class="section-title">Every Trek We Offer</h2>
+          <p class="section-sub">Filter by difficulty, duration, or region to find your perfect match.</p>
+        </div>
+        <!-- Simple filter pills using existing tag styles -->
+        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+          <span class="tag tag-easy" style="cursor:pointer;padding:6px 14px">Easy</span>
+          <span class="tag tag-moderate" style="cursor:pointer;padding:6px 14px">Moderate</span>
+          <span class="tag tag-hard" style="cursor:pointer;padding:6px 14px">Challenging</span>
+        </div>
+      </div>
+
+      <div class="grid-3">
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&q=80" alt="Everest Base Camp" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-hard">Challenging</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Everest Base Camp Trek</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>14 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>5,364m</span>
+              <span>Everest</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,480</div>
+              <a class="btn btn-primary" href="trek-everest.html" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1445307806294-bff7f67ff225?w=600&q=80" alt="Gokyo Lakes" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-moderate">Moderate</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Gokyo Lakes Trek</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>12 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>5,357m</span>
+              <span>Everest</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,190</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1605640840605-14ac1855827b?w=600&q=80" alt="Annapurna Circuit" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-moderate">Moderate</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Annapurna Circuit</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>18 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>5,416m</span>
+              <span>Annapurna</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,320</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1571755177369-2b8f5e1e1e5d?w=600&q=80" alt="Poon Hill" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-easy">Easy</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Poon Hill Sunrise Trek</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>5 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>3,210m</span>
+              <span>Annapurna</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$490</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80" alt="Langtang Valley" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-moderate">Moderate</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Langtang Valley Trek</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>10 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>4,984m</span>
+              <span>Langtang</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$980</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="trek-card">
+          <div class="trek-img">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Manaslu Circuit" loading="lazy" />
+            <div class="trek-badge"><span class="tag tag-hard">Challenging</span></div>
+          </div>
+          <div class="trek-body">
+            <h3 class="trek-name">Manaslu Circuit</h3>
+            <div class="trek-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>16 Days</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>5,160m</span>
+              <span>Manaslu</span>
+            </div>
+            <div class="trek-footer">
+              <div class="trek-price"><small>From</small>$1,650</div>
+              <a class="btn btn-primary" href="#" style="padding:9px 18px;font-size:.8rem">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="font-size:1.4rem;font-weight:800;color:var(--white);display:flex;align-items:center;gap:8px;text-decoration:none">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2,22 10,8 16,16 20,10 26,22"/></svg>
+            Summit<span style="color:var(--red)">Path</span>
+          </a>
+          <p>Expert-guided Himalayan treks since 2008. Licensed, insured, and passionately committed to your safety and wonder.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Trek Regions</h4>
+          <ul>
+            <li><a href="#">Everest Region</a></li>
+            <li><a href="#">Annapurna Region</a></li>
+            <li><a href="#">Langtang Region</a></li>
+            <li><a href="#">Manaslu Region</a></li>
+            <li><a href="#">Short Treks</a></li>
+            <li><a href="#">View All Treks</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <address>
+            Thamel, Kathmandu<br/>Nepal<br/><br/>
+            📞 +977 9801 234 567<br/>
+            ✉ info@summitpath.com<br/><br/>
+            Mon–Sat: 9am – 6pm NPT
+          </address>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2025 SummitPath Trekking Pvt. Ltd. All rights reserved.</p>
+        <div>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  
+  <!-- Shared scripts -->
+  <script src="nav.js"></script>
+
+</body>
+</html>
