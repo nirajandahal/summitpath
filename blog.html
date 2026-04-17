@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Trekking Guides, Tips &amp; Stories | SummitPath</title>
+  <meta name="description" content="Expert trekking guides, packing advice, altitude safety tips, and stories from the trail. Everything you need to prepare for your Himalayan adventure." />
+  <link rel="canonical" href="https://www.summitpath.com/blog.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Blog — Trekking Guides, Tips &amp; Stories | SummitPath" />
+  <meta property="og:description" content="Expert trekking guides, packing advice, altitude safety tips, and stories from the trail." />
+  <meta property="og:image"       content="https://images.unsplash.com/photo-1469521669194-babb45599def?w=1200&q=80" />
+  <meta property="og:url"         content="https://www.summitpath.com/blog.html" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-inner">
+  
+        <a href="index.html" class="nav-logo" aria-label="SummitPath home">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="2,22 10,8 16,16 20,10 26,22"/>
+          </svg>
+          Summit<span>Path</span>
+        </a>
+  
+        <ul class="nav-menu" role="menubar">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" data-page="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" data-page="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html" aria-haspopup="true">
+              Trek Destinations
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <ul class="dropdown" role="menu">
+              <li><a href="trek-everest.html" role="menuitem">Everest Region</a></li>
+              <li><a href="trek-everest.html" role="menuitem">Annapurna Region</a></li>
+              <li><a href="trek-everest.html" role="menuitem">Langtang Region</a></li>
+              <li><a href="trek-everest.html" role="menuitem">Manaslu Region</a></li>
+              <li><a href="trek-everest.html" role="menuitem">Short Treks</a></li>
+              <hr class="dropdown-divider" />
+              <li><a href="trek-everest.html" class="view-all" role="menuitem">View All Treks →</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html" data-page="tours.html">Tours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" data-page="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" data-page="contact.html">Contact</a>
+          </li>
+          <li class="nav-item nav-cta">
+            <a class="btn btn-primary" href="contact.html">Book Now</a>
+          </li>
+        </ul>
+  
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a class="mobile-nav-link" href="index.html">Home</a>
+    <a class="mobile-nav-link" href="about.html">About Us</a>
+    <div>
+      <a class="mobile-nav-link" id="mobileDestToggle" href="destinations.html">
+        Trek Destinations
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+      <div class="mobile-accordion" id="mobileDestMenu">
+        <a href="trek-everest.html">Everest Region</a>
+        <a href="trek-everest.html">Annapurna Region</a>
+        <a href="trek-everest.html">Langtang Region</a>
+        <a href="trek-everest.html">Manaslu Region</a>
+        <a href="trek-everest.html">Short Treks</a>
+        <a href="trek-everest.html" style="font-weight:700;color:var(--red)">View All Treks →</a>
+      </div>
+    </div>
+    <a class="mobile-nav-link" href="destinations.html">Tours</a>
+    <a class="mobile-nav-link" href="blog.html">Blog</a>
+    <a class="mobile-nav-link" href="contact.html">Contact</a>
+    <a class="btn btn-primary mobile-cta" href="contact.html">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="container">
+      <nav class="page-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> / Blog
+      </nav>
+      <h1>From the Trail</h1>
+      <p>Guides, gear advice, altitude science, and stories from the people who walk these mountains every season.</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="blog-layout">
+
+        <!-- POSTS GRID -->
+        <main id="main-content">
+
+          <!-- Category filter strip -->
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px" role="navigation" aria-label="Filter by category">
+            <a class="cat-pill active" href="blog.html">All</a>
+            <a class="cat-pill" href="#">Travel Tips</a>
+            <a class="cat-pill" href="#">Gear &amp; Packing</a>
+            <a class="cat-pill" href="#">Health &amp; Safety</a>
+            <a class="cat-pill" href="#">Culture &amp; People</a>
+            <a class="cat-pill" href="#">Trek Stories</a>
+          </div>
+
+          <div class="blog-grid" style="margin-top:0">
+
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="blog-post.html" aria-label="Read: Best Time of Year to Trek Everest Base Camp">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80"
+                       alt="Sunrise over Himalayan peaks near Everest"
+                       loading="lazy" itemprop="image" />
+                </div>
+              </a>
+              <div class="blog-body">
+                <p class="blog-cat" itemprop="articleSection">Travel Tips</p>
+                <h2 class="blog-title" itemprop="headline">
+                  <a href="blog-post.html">Best Time of Year to Trek Everest Base Camp</a>
+                </h2>
+                <p class="blog-excerpt" itemprop="description">Pre- and post-monsoon windows offer the most stable weather and clearest views — here's how to choose your season wisely.</p>
+                <div class="blog-meta">
+                  <time datetime="2025-05-14" itemprop="datePublished">May 14, 2025</time>
+                  &nbsp;·&nbsp; 6 min read
+                  &nbsp;·&nbsp; <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Pemba Sherpa</span></span>
+                </div>
+                <a class="blog-read" href="blog-post.html">Read article →</a>
+              </div>
+            </article>
+
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="#" aria-label="Read: The Complete High-Altitude Trekking Packing List">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=600&q=80"
+                       alt="Trekking gear laid out including boots, jacket and backpack"
+                       loading="lazy" itemprop="image" />
+                </div>
+              </a>
+              <div class="blog-body">
+                <p class="blog-cat" itemprop="articleSection">Gear &amp; Packing</p>
+                <h2 class="blog-title" itemprop="headline">
+                  <a href="#">The Complete High-Altitude Trekking Packing List</a>
+                </h2>
+                <p class="blog-excerpt" itemprop="description">From layering systems to blister prevention, our guides share the exact gear they recommend for every Himalayan route.</p>
+                <div class="blog-meta">
+                  <time datetime="2025-04-28" itemprop="datePublished">Apr 28, 2025</time>
+                  &nbsp;·&nbsp; 9 min read
+                  &nbsp;·&nbsp; <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Rina Tamang</span></span>
+                </div>
+                <a class="blog-read" href="blog-post.html">Read article →</a>
+              </div>
+            </article>
+
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="#" aria-label="Read: Altitude Sickness: Prevention, Recognition and Response">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1526065388420-77e8c04e6d06?w=600&q=80"
+                       alt="Trekker resting at high altitude camp"
+                       loading="lazy" itemprop="image" />
+                </div>
+              </a>
+              <div class="blog-body">
+                <p class="blog-cat" itemprop="articleSection">Health &amp; Safety</p>
+                <h2 class="blog-title" itemprop="headline">
+                  <a href="#">Altitude Sickness: Prevention, Recognition &amp; Response</a>
+                </h2>
+                <p class="blog-excerpt" itemprop="description">AMS can affect trekkers at any fitness level. Our medically reviewed guide covers everything from acclimatisation schedules to when to descend.</p>
+                <div class="blog-meta">
+                  <time datetime="2025-03-10" itemprop="datePublished">Mar 10, 2025</time>
+                  &nbsp;·&nbsp; 8 min read
+                  &nbsp;·&nbsp; <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Kiran Gurung</span></span>
+                </div>
+                <a class="blog-read" href="blog-post.html">Read article →</a>
+              </div>
+            </article>
+
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="#" aria-label="Read: Understanding Sherpa Culture Before You Trek">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80"
+                       alt="Sherpa guide walking through a Himalayan village"
+                       loading="lazy" itemprop="image" />
+                </div>
+              </a>
+              <div class="blog-body">
+                <p class="blog-cat" itemprop="articleSection">Culture &amp; People</p>
+                <h2 class="blog-title" itemprop="headline">
+                  <a href="#">Understanding Sherpa Culture Before You Trek</a>
+                </h2>
+                <p class="blog-excerpt" itemprop="description">Customs, etiquette, and the history of the Khumbu's most celebrated community. Go deeper than the trail.</p>
+                <div class="blog-meta">
+                  <time datetime="2025-02-19" itemprop="datePublished">Feb 19, 2025</time>
+                  &nbsp;·&nbsp; 7 min read
+                  &nbsp;·&nbsp; <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Pemba Sherpa</span></span>
+                </div>
+                <a class="blog-read" href="blog-post.html">Read article →</a>
+              </div>
+            </article>
+
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="#" aria-label="Read: Solo vs Group Trekking in Nepal">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80"
+                       alt="Group of trekkers on a mountain ridge"
+                       loading="lazy" itemprop="image" />
+                </div>
+              </a>
+              <div class="blog-body">
+                <p class="blog-cat" itemprop="articleSection">Travel Tips</p>
+                <h2 class="blog-title" itemprop="headline">
+                  <a href="#">Solo vs Group Trekking in Nepal: Which Is Right for You?</a>
+                </h2>
+                <p class="blog-excerpt" itemprop="description">Both have real merits. We break down the safety, cost, social, and logistical trade-offs honestly.</p>
+                <div class="blog-meta">
+                  <time datetime="2025-01-30" itemprop="datePublished">Jan 30, 2025</time>
+                  &nbsp;·&nbsp; 5 min read
+                  &nbsp;·&nbsp; <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Rina Tamang</span></span>
+                </div>
+                <a class="blog-read" href="blog-post.html">Read article →</a>
+              </div>
+            </article>
+
+            <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+              <a href="#" aria-label="Read: My First Trek: A Beginner's Diary from Poon Hill">
+                <div class="blog-img">
+                  <img src="https://images.unsplash.com/photo-1571755177369-2b8f5e1e1e5d?w=600&q=80"
+                       alt="Sunrise view from Poon Hill over the Annapurna range"
+                       loading="lazy" itemprop="image" />
+                </div>
+              </a>
+              <div class="blog-body">
+                <p class="blog-cat" itemprop="articleSection">Trek Stories</p>
+                <h2 class="blog-title" itemprop="headline">
+                  <a href="#">My First Trek: A Beginner's Diary from Poon Hill</a>
+                </h2>
+                <p class="blog-excerpt" itemprop="description">Ji-Yeon from Seoul had never hiked before. Five days later she was crying happy tears at 3,210m. Her words, unedited.</p>
+                <div class="blog-meta">
+                  <time datetime="2025-01-08" itemprop="datePublished">Jan 8, 2025</time>
+                  &nbsp;·&nbsp; 6 min read
+                  &nbsp;·&nbsp; <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Ji-Yeon K.</span></span>
+                </div>
+                <a class="blog-read" href="blog-post.html">Read article →</a>
+              </div>
+            </article>
+
+          </div><!-- /.blog-grid -->
+
+          <!-- Pagination -->
+          <nav aria-label="Blog pagination" style="display:flex;justify-content:center;gap:8px;margin-top:56px">
+            <a class="btn btn-primary" href="#" style="padding:10px 20px" aria-current="page">1</a>
+            <a class="btn btn-outline" href="#" style="padding:10px 20px">2</a>
+            <a class="btn btn-outline" href="#" style="padding:10px 20px">3</a>
+            <a class="btn btn-outline" href="#" style="padding:10px 20px">Next →</a>
+          </nav>
+
+        </main>
+
+        <!-- SIDEBAR -->
+        <aside class="blog-sidebar" aria-label="Blog sidebar">
+
+          <!-- Categories -->
+          <div class="widget">
+            <h2 class="widget-title">Categories</h2>
+            <div class="cat-pills">
+              <a class="cat-pill active" href="#">All</a>
+              <a class="cat-pill" href="#">Travel Tips</a>
+              <a class="cat-pill" href="#">Gear &amp; Packing</a>
+              <a class="cat-pill" href="#">Health &amp; Safety</a>
+              <a class="cat-pill" href="#">Culture &amp; People</a>
+              <a class="cat-pill" href="#">Trek Stories</a>
+            </div>
+          </div>
+
+          <!-- Recent Posts -->
+          <div class="widget">
+            <h2 class="widget-title">Recent Posts</h2>
+
+            <a class="recent-post" href="blog-post.html" style="text-decoration:none;color:inherit">
+              <div class="recent-post-img">
+                <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=120&q=80" alt="Everest season" loading="lazy" />
+              </div>
+              <div>
+                <div class="recent-post-title">Best Time to Trek Everest Base Camp</div>
+                <div class="recent-post-date">May 14, 2025</div>
+              </div>
+            </a>
+
+            <a class="recent-post" href="blog-post.html" style="text-decoration:none;color:inherit">
+              <div class="recent-post-img">
+                <img src="https://images.unsplash.com/photo-1537905569824-f89f14cceb68?w=120&q=80" alt="Packing list" loading="lazy" />
+              </div>
+              <div>
+                <div class="recent-post-title">The Complete Trekking Packing List</div>
+                <div class="recent-post-date">Apr 28, 2025</div>
+              </div>
+            </a>
+
+            <a class="recent-post" href="blog-post.html" style="text-decoration:none;color:inherit">
+              <div class="recent-post-img">
+                <img src="https://images.unsplash.com/photo-1526065388420-77e8c04e6d06?w=120&q=80" alt="Altitude sickness" loading="lazy" />
+              </div>
+              <div>
+                <div class="recent-post-title">Altitude Sickness: Prevention &amp; Response</div>
+                <div class="recent-post-date">Mar 10, 2025</div>
+              </div>
+            </a>
+
+            <a class="recent-post" href="blog-post.html" style="text-decoration:none;color:inherit">
+              <div class="recent-post-img">
+                <img src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=120&q=80" alt="Sherpa culture" loading="lazy" />
+              </div>
+              <div>
+                <div class="recent-post-title">Understanding Sherpa Culture</div>
+                <div class="recent-post-date">Feb 19, 2025</div>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Newsletter -->
+          <div class="widget widget-newsletter">
+            <h2 class="widget-title">Trail Dispatches</h2>
+            <p>Get our best guides and seasonal trek updates delivered once a month. No noise, just the good stuff.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="your@email.com" aria-label="Email address" />
+              <button type="button">Subscribe</button>
+            </div>
+            <p style="font-size:.72rem;color:var(--gray-500);margin-top:8px;margin-bottom:0">No spam. Unsubscribe any time.</p>
+          </div>
+
+        </aside>
+
+      </div><!-- /.blog-layout -->
+    </div>
+  </section>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" style="font-size:1.4rem;font-weight:800;color:var(--white);display:flex;align-items:center;gap:8px;text-decoration:none">
+            <svg width="22" height="22" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="2,22 10,8 16,16 20,10 26,22"/></svg>
+            Summit<span style="color:var(--red)">Path</span>
+          </a>
+          <p>Expert-guided Himalayan treks since 2008. Licensed, insured, and passionately committed to your safety and wonder.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+            </a>
+          </div>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="destinations.html">Tours</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Trek Regions</h4>
+          <ul>
+            <li><a href="trek-everest.html">Everest Region</a></li>
+            <li><a href="trek-everest.html">Annapurna Region</a></li>
+            <li><a href="trek-everest.html">Langtang Region</a></li>
+            <li><a href="trek-everest.html">Manaslu Region</a></li>
+            <li><a href="trek-everest.html">Short Treks</a></li>
+            <li><a href="trek-everest.html">View All Treks</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <address>
+            Thamel, Kathmandu<br/>Nepal<br/><br/>
+            📞 +977 9801 234 567<br/>
+            ✉ info@summitpath.com<br/><br/>
+            Mon–Sat: 9am – 6pm NPT
+          </address>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>© 2025 SummitPath Trekking Pvt. Ltd. All rights reserved.</p>
+        <div>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <button id="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  
+  <!-- Shared scripts -->
+  <script src="nav.js"></script>
+
+</body>
+</html>
